@@ -11,7 +11,6 @@ function Nav() {
       </div>
       <ul className="nav-items">
         <li className="nav-item">
-          <input type="checkbox" className="checkboxes check-1"></input>
           <NavLink to="/" activeClassName="active-class" exact>
             Home
           </NavLink>
@@ -19,11 +18,6 @@ function Nav() {
         <li className="nav-item">
           <NavLink to="/about" activeClassName="active-class" exact>
             About
-          </NavLink>
-        </li>
-        <li className="nav-item">
-          <NavLink to="/resume" activeClassName="active-class" exact>
-            Resume
           </NavLink>
         </li>
         <li className="nav-item">
@@ -54,9 +48,7 @@ const NavStyled = styled.nav`
   height: 100%;
   width: 100%;
   border-right: 1px solid var(--border-color);
-  .checkboxes {
-    display: none;
-  }
+
   .profilePic {
     width: 100%;
     border-bottom: 1px solid var(--border-color);
@@ -73,12 +65,13 @@ const NavStyled = styled.nav`
     width: 100%;
     text-align: center;
     .active {
-      background-color: var(--primary-color);
-      color: var(--border-color);
+      background-color: var(--primary-color-light);
+      color: var(--white-color);
     }
     li {
       display: block;
       a {
+        text-decoration: none;
         display: block;
         padding: 0.5rem 0;
         position: relative;
@@ -89,7 +82,7 @@ const NavStyled = styled.nav`
         letter-spacing: 1px;
         :hover {
           cursor: pointer;
-          color: var(--border-color);
+          color: var(--white-color);
         }
         ::before {
           content: "";
@@ -98,7 +91,7 @@ const NavStyled = styled.nav`
           left: 0;
           width: 0;
           height: 50%;
-          background-color: var(--primary-color);
+          background-color: var(--border-color);
           transition: all 0.3s cubic-bezier(0.43, 0.57, 0.95, 0.51);
           opacity: 1;
           z-index: -1;
@@ -108,6 +101,8 @@ const NavStyled = styled.nav`
       a:hover::before {
         width: 100%;
         height: 100%;
+        opacity: 1;
+        background-color: var(--secondary-color);
       }
     }
   }

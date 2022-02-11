@@ -15,7 +15,7 @@ function HomePage() {
         <h1>
           Hi I'm <span>Juba</span>
         </h1>
-        <p>I'm a software engineer student and this is my website.</p>
+        <p>I'm a Software Engineer student and this is my website.</p>
         <p>Take a look!</p>
         <div className="icons">
           <a
@@ -52,6 +52,9 @@ const HomePageStyled = styled.header`
   width: 100%;
   height: 100vh;
   position: relative;
+  span {
+    color: var(--primary-color);
+  }
   .particles-home-page {
     position: absolute;
     top: 0;

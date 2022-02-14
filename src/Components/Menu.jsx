@@ -45,6 +45,7 @@ const MenuItemStyled = styled.div`
       position: relative;
       overflow: hidden;
       h6 {
+        padding: 0.3rem;
         font-size: 1.5rem;
       }
       img {

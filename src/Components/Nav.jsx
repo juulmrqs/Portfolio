@@ -91,7 +91,7 @@ const NavStyled = styled.nav`
           left: 0;
           width: 0;
           height: 50%;
-          background-color: var(--border-color);
+          background-color: var(--primary-color-light);
           transition: all 0.3s cubic-bezier(0.43, 0.57, 0.95, 0.51);
           opacity: 1;
           z-index: -1;
@@ -102,7 +102,7 @@ const NavStyled = styled.nav`
         width: 100%;
         height: 100%;
         opacity: 1;
-        background-color: var(--secondary-color);
+        background-color: var(--primary-color-light);
       }
     }
   }

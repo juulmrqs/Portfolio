@@ -5,19 +5,19 @@ const GlobalStyle = createGlobalStyle`
 
 .dark-theme{
     --primary-color: #EDDF1C;
-    --primary-color-light: #203759;
+    --primary-color-light: #616d80;
     --secondary-color: #375683;
-    --background-dark-color: #0A101A;
+    --background-dark-color: #0D0E10;
     --background-dark-grey: #191D2B;
-    --border-color: #2e344e;
-    --background-light-color: #F1F1F1;
-    --background-light-color-2: rgba(3,127,255,.3);
+    --border-color: #2e313f;
+    --background-light-color: #ebe3e3;
+    --background-light-color-2: #979da34c;
     --white-color: #FFF;
     --black-color: #000;
     --font-light-color: #a4acc4;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
-    --sidebar-dark-color: #191D2B;
+    --sidebar-dark-color: #0D0E10;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;
@@ -25,19 +25,19 @@ const GlobalStyle = createGlobalStyle`
 
 
 .light-theme{
-    --primary-color: #EDDF1C;
-    --primary-color-light: #007bff;
-    --secondary-color: #057FFF;
-    --background-dark-color: #eeeded;
+    --primary-color: #d1c522;
+    --primary-color-light: #c7cdd3;
+    --secondary-color: #38393a;
+    --background-dark-color: #e6e6e6;
     --background-dark-grey: #cfc6c6;
     --border-color: #cbced8;
     --background-light-color: #F1F1F1;
-    --background-light-color-2: rgba(3,127,255,.3);
+    --background-light-color-2: #979da34c;
     --white-color: #151515;
     --font-light-color: #313131;
     --font-dark-color: #313131;
     --font-dark-color-2: #151515;
-    --sidebar-dark-color: #c2bdbd;
+    --sidebar-dark-color: #797986;
     --scrollbar-bg-color: #383838;
     --scrollbar-thump-color: #6b6b6b;
     --scrollbar-track-color: #383838;

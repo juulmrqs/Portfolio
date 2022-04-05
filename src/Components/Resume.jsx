@@ -5,13 +5,25 @@ import Title from "../Components/Title";
 import SmallTitle from "../Components/SmallTitle";
 import SchoolIcon from "@material-ui/icons/School";
 import ResumeItem from "../Components/ResumeItem";
+import BusinessCenterIcon from '@material-ui/icons/BusinessCenter';
 
 function Resume() {
   const school = <SchoolIcon />;
+  const briefcase = <BusinessCenterIcon />;
   return (
     <ResumeStyled>
       <Title title={"Resume"} span={"resume"} />
       <InnerLayout>
+      <div className="small-title">
+        <SmallTitle icon={briefcase} title={'Working Experience'} />
+      </div>
+        <div className="resume-content">
+          <ResumeItem 
+              year={'2015 - 2020'} 
+              title={'Intern - Full Stack Developer'}
+              subTitle={'Instituto e Gestão de Tecnologia da Informática'}
+              text={'Developing web system and desktop, using: Python/Flask/Next JS/typescript. Also managing a database.'} />
+        </div>
         <div className="small-title u-small-title-margin">
           <SmallTitle icon={school} title={"Educational Qualifications"} />
         </div>
